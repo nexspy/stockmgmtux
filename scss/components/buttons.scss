@@ -1,0 +1,36 @@
+/** Buttons **/
+
+.logout_btn {
+    padding: 5px 15px;
+    background: #19b3d3;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+
+    &:hover {
+        background: #0b87a6;
+    }
+  }
+  
+
+  .btn {
+      cursor: pointer;
+      background-color: $form-bg-color;
+      color: white;
+      padding: 10px 35px;
+      border: none;
+      border-radius: $border-radius;
+
+      &:hover {
+          color: $form-bg-color;
+          background-color: white;
+          border: 1px solid $form-bg-color;
+      }
+  }

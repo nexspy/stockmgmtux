@@ -1,0 +1,28 @@
+/** Form **/
+
+.block {
+    form {
+        h2.title {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.form-item {
+
+    margin-bottom: 20px;
+
+    label {
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
+    
+    input {
+        width: 100%;
+        padding: 14px 18px;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+    }
+
+}
+

@@ -1,0 +1,27 @@
+.block {
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+
+    &.blue {
+        background-color: $form-bg-color;
+        color: white;
+
+        h2.title {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+    }
+
+    h2.title {
+        color: $color-title-block;
+        margin: 0px;
+    }
+}

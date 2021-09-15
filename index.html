@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Stock Management</title>
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <!-- <link rel="stylesheet" href="./dist/css/style.css"> -->
+        <link rel="stylesheet" href="./dist/css/style.css">
+    </head>
+
+    <body class="page page-dashboard">
+      
+      <input type="checkbox" id="check">
+
+      <!--header area start-->
+      <header>
+        <label for="check">
+          <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        <div class="left_area">
+          <h3>Stock <span>Management</span></h3>
+        </div>
+        <div class="right_area">
+          <a href="#" class="logout_btn">Logout</a>
+        </div>
+      </header>
+      <!--header area end-->
+
+      <!--mobile navigation bar start-->
+      <div class="mobile_nav">
+        <div class="nav_bar">
+          <img src="1.png" class="mobile_profile_image" alt="">
+          <i class="fa fa-bars nav_btn"></i>
+        </div>
+        <div class="mobile_nav_items">
+          <a href="#" class="active"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+          <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
+          <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
+          <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+          <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+          <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+        </div>
+      </div>
+      <!--mobile navigation bar end-->
+
+      <!-- Sidebar region -->
+      <div class="sidebar">
+        <div class="profile_info">
+          <img src="./images/profile.png" class="profile_image" alt="">
+          <h4>Albert E.</h4>
+        </div>
+        <a href="#" class="active"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
+        <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
+        <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+        <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+        <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+      </div>
+      <!-- end-sidebar-region -->
+
+      <!-- Content region -->
+      <div class="content">
+
+        <h1 class="page-title">Dashboard</h1>
+
+        <div class="block">
+          <h2 class="title">Earnings <span>2021</span></h2>
+          <div class="block-content">
+            <p>The content of the block can be any HTML content.</p>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2 class="title">Expenditures</h2>
+          <div class="block-content">
+            <p>Interesting ways to use a block.</p>
+          </div>
+        </div>
+
+        <div class="block blue">
+          <h2 class="title">Highlight Box</h2>
+          <div class="block-content">
+            <p>Used for popups and special highlighted box.</p>
+          </div>
+        </div>
+
+        <div class="block">
+          <form action="#">
+            <h2 class="title">Sample Form</h2>
+
+            <div class="form-item">
+              <label for="txt-firstname">First Name</label>
+              <input type="text" name="txt-firstname" id="txt-firstname" placeholder="First Name">
+            </div>
+
+            <div class="form-item">
+              <label for="txt-email">Email</label>
+              <input type="email" name="txt-email" id="txt-email" placeholder="Email">
+            </div>
+
+            <div class="form-item">
+              <label for="txt-date">Date</label>
+              <input type="date" name="txt-date" id="txt-date">
+            </div>
+
+            <div class="form-item actions">
+              <button class="btn">Save</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+      <!-- end-content-region -->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+      <script src="./dist/js/production.js"></script>
+
+    </body>
+</html>
