@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./dist/css/style.css">
     </head>
 
-    <body class="page page-dashboard">
+    <body class="theme-light">
       
       <input type="checkbox" id="check">
 
@@ -51,17 +51,17 @@
           <h4>Albert E.</h4>
         </div>
         <ul class="sidebar-menu">
-          <li class="active">
-            <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+          <li class="active" db-page="dashboard">
+            <a href="#" db-page="dashboard"><i class="fas fa-desktop" db-page="dashboard"></i><span db-page="dashboard">Dashboard</span></a>
           </li>
-          <li>
-            <a href="#"><i class="fas fa-cogs"></i><span>Products</span></a>
+          <li db-page="products">
+            <a href="#" db-page="products"><i class="fas fa-cogs" db-page="products"></i><span db-page="products">Products</span></a>
             <ul class="sub-menu">
-              <li>
-                <a href="#"><i class="fas fa-cogs"></i><span>Manage Products</span></a>
+              <li db-page="products-manage">
+                <a href="#" db-page="products-manage"><i class="fas fa-cogs" db-page="products-manage"></i><span db-page="products-manage">Manage Products</span></a>
               </li>
-              <li>
-                <a href="#"><i class="fas fa-cogs"></i><span>Add Product</span></a>
+              <li db-page="product-add">
+                <a href="#" db-page="products-add"><i class="fas fa-cogs" db-page="products-add"></i><span db-page="products-add">Add Product</span></a>
               </li>
             </ul>
           </li>
@@ -105,57 +105,94 @@
       <!-- Content region -->
       <div class="content">
 
-        <h1 class="page-title">Dashboard</h1>
+        <!-- Page : Dashboard -->
+        <div class="page page-dashboard">
+          <h1 class="page-title">Dashboard</h1>
 
-        <div class="block">
-          <h2 class="title">Earnings <span>2021</span></h2>
-          <div class="block-content">
-            <p>The content of the block can be any HTML content.</p>
+          <div class="block">
+            <h2 class="title">Earnings <span>2021</span></h2>
+            <div class="block-content">
+              <p>The content of the block can be any HTML content.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="block">
-          <h2 class="title">Expenditures</h2>
-          <div class="block-content">
-            <p>Interesting ways to use a block.</p>
+          <div class="block">
+            <h2 class="title">Expenditures</h2>
+            <div class="block-content">
+              <p>Interesting ways to use a block.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="block blue">
-          <h2 class="title">Highlight Box</h2>
-          <div class="block-content">
-            <p>Used for popups and special highlighted box.</p>
+          <div class="block blue">
+            <h2 class="title">Highlight Box</h2>
+            <div class="block-content">
+              <p>Used for popups and special highlighted box.</p>
+            </div>
           </div>
+
+        </div><!--end-page-dashboard-->
+
+        <!-- Page : Products -->
+        <div class="page page-products">
+          <h1 class="page-title">Products Page</h1>
+          <p class="page-subtitle">Products dashboard</p>
+
+          <div class="block">
+            <h2 class="title">Welcome to Products Page!!</h2>
+            <div class="block-content">
+              <p>In this page, you can manage all your products related activities.</p>
+            </div>
+          </div>
+
         </div>
+        <!-- end-content-region -->
 
-        <div class="block">
-          <form action="#">
-            <h2 class="title">Sample Form</h2>
+        <!-- Page : Manage Products -->
+        <div class="page page-products-manage">
+          <h1 class="page-title">Manage Products</h1>
 
-            <div class="form-item">
-              <label for="txt-firstname">First Name</label>
-              <input type="text" name="txt-firstname" id="txt-firstname" placeholder="First Name">
+          <div class="block">
+            <h2 class="title">List of Products</h2>
+            <div class="block-content">
+              <p>List of products will be rendered here in table or cards.</p>
             </div>
+          </div>
 
-            <div class="form-item">
-              <label for="txt-email">Email</label>
-              <input type="email" name="txt-email" id="txt-email" placeholder="Email">
-            </div>
-
-            <div class="form-item">
-              <label for="txt-date">Date</label>
-              <input type="date" name="txt-date" id="txt-date">
-            </div>
-
-            <div class="form-item actions">
-              <button class="btn">Save</button>
-            </div>
-
-          </form>
         </div>
+        <!-- end-content-region -->
 
-      </div>
-      <!-- end-content-region -->
+        <!-- Page : Add Product -->
+        <div class="page page-products-add">
+          <h1 class="page-title">Add Product</h1>
+
+          <div class="block">
+            <form action="#">
+              <h2 class="title">Sample Form</h2>
+
+              <div class="form-item">
+                <label for="txt-firstname">First Name</label>
+                <input type="text" name="txt-firstname" id="txt-firstname" placeholder="First Name">
+              </div>
+
+              <div class="form-item">
+                <label for="txt-email">Email</label>
+                <input type="email" name="txt-email" id="txt-email" placeholder="Email">
+              </div>
+
+              <div class="form-item">
+                <label for="txt-date">Date</label>
+                <input type="date" name="txt-date" id="txt-date">
+              </div>
+
+              <div class="form-item actions">
+                <button class="btn">Save</button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+        <!-- end-content-region -->
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
       <script src="./dist/js/production.js"></script>

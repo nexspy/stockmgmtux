@@ -96,6 +96,17 @@ label #sidebar_btn:hover {
   .active .sub-menu a {
     margin-left: 150px;
   }
+  
+
+  .active {
+    margin-left: 157px;
+
+    i {
+      border-bottom: 2px solid $border-color;
+      padding: 5px;
+      padding-bottom: 15px;
+    }
+  }
 
   a {
     font-size: 20px;
@@ -104,17 +115,6 @@ label #sidebar_btn:hover {
 
     span {
       display: none;
-    }
-
-    &.active {
-
-      margin-left: 157px;
-
-      i {
-        border-bottom: 2px solid $border-color;
-        padding: 5px;
-        padding-bottom: 15px;
-      }
     }
 
   }
