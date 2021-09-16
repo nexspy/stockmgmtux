@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     var $btn_nav = $('.nav_btn');
-    var $btn_link = $('.sidebar a');
+    var $btn_link = $('.sidebar > ul > li');
 
     $btn_nav.click(function(){
         $('.mobile_nav_items').toggleClass('active');
