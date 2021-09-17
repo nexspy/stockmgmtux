@@ -1,0 +1,183 @@
+$checkbox-width: 50px;
+$image-width: 95px;
+$selector-width: $checkbox-width + $image-width;
+$info-width: 400px;
+$states-width: 400px;
+
+@mixin item-list-states {
+    .states {
+        float: right;
+        padding: 40px 0px;
+        width: $states-width;
+
+        &>div {
+            float: left;
+            width: 100px;
+            text-align: center;
+        }
+
+        .qty {
+            width: 52px;
+        }
+        .actions {
+            width: 46px;
+            cursor: pointer;
+        }
+    }
+}
+
+.item-header {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.41);
+    margin-bottom: 12px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+
+    &>div {
+        float: left;
+        box-sizing: border-box;
+        padding: 10px;
+        color: $color-font-secondary;
+        font-weight: bold;
+    }
+    
+    .checkbox {
+        width: $checkbox-width;
+        transform: scale(1.3);
+        text-align: center;
+    }
+    .img {
+        width: $image-width;
+    }
+    .info {
+        width: $info-width;
+    }
+    
+    @include item-list-states;
+
+    .states {
+        padding: 10px 0px;
+    }
+}
+
+.item {
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    overflow: hidden;
+    min-height: 95px;
+    margin-bottom: 12px;
+    background-color: white;
+    clear: both;
+    // cursor: pointer;
+
+    &>div {
+        float: left;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    &:hover {
+        background-color: $card-bg-color;
+    }
+
+    .selector {
+        width: $selector-width;
+        padding: 0px;
+
+        .checkbox, .img {
+            float: left;
+        }
+
+        .checkbox {
+            width: $checkbox-width;
+            text-align: center;
+            margin-top: 25px;
+    
+            input {
+                transform: scale(1.3);
+            }
+        }
+    
+        .img {
+            width: $image-width;
+            height: 85px;
+            padding-top: 10px;
+    
+            img {
+                width: 75px;
+                height: auto;
+            }
+        }
+    }
+    
+
+    .info {
+        width: $info-width;
+
+        .top, .bottom {
+            width: 100%;
+        }
+
+        .top {
+            font-size: 1.3em;
+            font-weight: bold;
+            line-height: 24px;
+            margin: 10px 0px;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            font-size: 0.8em;
+            
+            .attribute {
+                color: $color-title-block;
+            }
+        }
+    }
+
+    @include item-list-states;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 780px) {
+
+    .item-header {
+        .checkbox {
+            width: 25%;
+        }
+
+        .info, .states {
+            display: none;
+        }
+    }
+
+    .item {
+        .selector, .info , .states {
+            width: 100%;
+        }
+
+        .selector {
+            .checkbox {
+                width: 25%;
+            }
+        }
+
+        .info {
+            text-align: center;
+            
+            .bottom {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .states {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+}

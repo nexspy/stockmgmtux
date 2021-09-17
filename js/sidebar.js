@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var current_page = 'dashboard';
+    var current_page = 'products-manage';
     var $btn_nav = $('.nav_btn');
     var $btn_link = $('.sidebar > ul > li');
 

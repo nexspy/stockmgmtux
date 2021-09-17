@@ -1,0 +1,62 @@
+.item-operations {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+        margin: 20px 0px;
+
+        h2 {
+            color: $color-title;
+            font-size: 1.9em;
+            padding-left: 20px;
+
+            span {
+                color: $color-font-primary;
+                font-size: 0.5em;
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        gap: 5px;
+
+        .btn {
+            height: 20px;
+            padding: 20px 35px;
+
+            span {
+                padding-right: 12px;
+                font-size: 1.2em;
+            }
+
+            &:hover {
+                background-color: $color-font-secondary;
+                border: none;
+                color: white;
+            }
+        }
+
+        .btn-export {
+            img {
+                width: 23px;
+            }
+        }
+    }
+}
+
+
+/* Responsive CSS */
+
+@media screen and (max-width: 780px) {
+
+    .item-operations {
+        display: block;
+        margin-bottom: 20px;
+
+        .right {
+            justify-content: center;
+        }
+    }
+
+}
