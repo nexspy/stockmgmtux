@@ -101,6 +101,15 @@ label #sidebar_btn:hover {
   .active {
     margin-left: 157px;
 
+    a {
+      margin-left: 0px;
+    }
+
+    .sub-menu a {
+      margin-left: 0px;
+      padding-left: 18px;
+    }
+
     i {
       border-bottom: 2px solid $border-color;
       padding: 5px;
